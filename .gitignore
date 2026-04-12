@@ -1,0 +1,6 @@
+.venv/
+emi_env/
+mlruns/
+mlflow.db
+__pycache__/
+*.pyc
