@@ -530,6 +530,10 @@ elif page == "📊 Check Eligibility":
             st.error("❌ Minimum age requirement: 21 years")
             st.stop()
         
+        if monthly_salary < 15000 or monthly_salary > 200000:
+            st.error("⚠️ Salary should be between ₹15,000 and ₹2,00,000 for accurate prediction.")
+            st.stop()
+        
         if years_of_employment < 1:
             st.error("❌ Minimum employment requirement: 1 year")
             st.stop()
